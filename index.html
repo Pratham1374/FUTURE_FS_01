@@ -4,22 +4,28 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pratham P | Portfolio</title>
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css" />
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
+
   <!-- Header -->
-  <header id="home">
+  <header id="home" data-aos="fade-down">
     <h1>Hi, I'm Pratham 👋</h1>
     <p>Full Stack Web Developer & AI Enthusiast</p>
-    <div class="social-links">
+    <div class="social-links" data-aos="fade-in" data-aos-delay="200">
       <a href="https://github.com/Pratham1374" target="_blank">
         <img src="assets/icons/github.svg" alt="GitHub" />
       </a>
-      <a href="https://www.linkedin.com/in/pratham-p-59b52a305?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+      <a href="https://www.linkedin.com/in/pratham-p-59b52a305" target="_blank">
         <img src="assets/icons/linkedin.svg" alt="LinkedIn" />
       </a>
     </div>
-    <nav>
+    <nav data-aos="fade-up" data-aos-delay="300">
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
@@ -28,7 +34,7 @@
   </header>
 
   <!-- About Section -->
-  <section id="about">
+  <section id="about" data-aos="fade-up">
     <h2>About Me</h2>
     <p>
       I'm Pratham, a passionate full-stack developer with a strong interest in AI and real-world web applications. 
@@ -37,20 +43,19 @@
   </section>
 
   <!-- Projects Section -->
-  <section id="projects">
+  <section id="projects" data-aos="fade-right">
     <h2>Projects</h2>
-    <div class="project">
+    <div class="project" data-aos="zoom-in" data-aos-delay="100">
       <img src="assets/images/project1.png" alt="Project Screenshot" />
       <h3>Portfolio Website</h3>
       <p>Built using HTML, CSS, and JavaScript. This site showcases my skills, projects, and contact info.</p>
     </div>
-    <!-- Add more projects as needed -->
   </section>
 
   <!-- Skills Section -->
-  <section id="skills">
+  <section id="skills" data-aos="fade-left">
     <h2>Skills</h2>
-    <ul>
+    <ul data-aos="fade-up" data-aos-delay="200">
       <li>HTML5</li>
       <li>CSS3</li>
       <li>JavaScript</li>
@@ -61,9 +66,9 @@
   </section>
 
   <!-- Contact Section -->
-  <section id="contact">
+  <section id="contact" data-aos="fade-up">
     <h2>Contact Me</h2>
-    <form>
+    <form data-aos="zoom-in" data-aos-delay="100">
       <input type="text" placeholder="Your Name" required />
       <input type="email" placeholder="Your Email" required />
       <textarea placeholder="Your Message" required></textarea>
@@ -71,6 +76,16 @@
     </form>
   </section>
 
+  <!-- Scripts -->
   <script src="script.js"></script>
+
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
 </body>
 </html>
